@@ -1,0 +1,15 @@
+we can openly navigate threw the servers directories thanks to the variable ?page=
+
+it is probably used like this in php
+
+x = $_GET['page']
+redirerct(x)
+
+where the function redirect looks for a page on the webserver or more like search for a file on the webserver
+it is supposed to be a file like page=page_n.php for example
+
+but it would theorically also work for page=../lol.jpeg
+
+
+or in our case to get the flag : ../../../../../../../etc/passwd
+

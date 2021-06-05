@@ -1,0 +1,12 @@
+When we visit the homepage we see at the end links to facbook twitter instgram
+
+by looking at the link we see it is http://192.168.0.5/index.php?page=redirect&site=twitter
+
+we can change it to
+http://192.168.0.5/index.php?page=redirect&site=evil.com
+
+so it allow an attacker to craft an url with a Official website link that will redirect
+a victim on the attacker's location and might lead to phising for example
+
+
+

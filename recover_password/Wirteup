@@ -1,0 +1,16 @@
+open Burpsuite turn  on intercept intercept 
+
+got to http://192.168.0.5/?page=recover
+
+clic submit 
+
+and we see in the request
+
+
+mail=webmaster%40borntosec.com&Submit=submit
+
+put any value into mail variable and submit request to get the flag
+
+the password recovery feature is very sensitive and the content of the mail must not be leaked nor Bruteforced 
+
+

@@ -1,0 +1,25 @@
+when visiting the file robots.txt we see there is a directory .hidden disallowed to robots
+
+so after checking it it seem that the README files are holding a flag
+
+first we download all the directories recursively
+
+$ wget -rx -e robots=off http://192.168.0.5/.hidden/
+
+then we use grep recursively to exctract the content of readme files
+
+$ grep -r -v \< index 192.168.0.5/.hidden > readmes
+
+we now have to take away all the fake files
+
+$ grep -v Demande readmes >  /tmp/1
+
+$ grep -v Toujours /tmp/1 > /tmp/2
+
+$ grep -v Non /tmp/2 > /tmp/3
+
+$ grep -v Tu /tmp/3 > /tmp/4
+
+
+And we have the .hidden flag in /tmp/4
+

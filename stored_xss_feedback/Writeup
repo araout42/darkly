@@ -1,0 +1,12 @@
+for xss we need to find a form with a parameter that is reflected on the page and is unchecked for tag injections
+
+so if we inject javascript on the page it will be executed on the client borwser
+
+to get the flag i just had to visit the page 
+
+http://192.168.0.5/index.php?page=feedback
+
+and just leave a comment with 'script' as the name
+
+
+it is a stored xss because it stays on the server and every client that will visits the page will execute the code

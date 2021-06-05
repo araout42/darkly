@@ -1,0 +1,11 @@
+by looking at the file robots.txt we see there is a file /whatever
+
+when looking at it we see the root htpassword hash 
+
+root:8621ffdbc5698829397d97767ac13db3
+
+just by google md5 decrypt we can get the poassword dragon
+
+and then login to the page /admin
+
+with password root:dragon

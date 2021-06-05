@@ -1,0 +1,12 @@
+open Burpsuite
+
+visit http://192.168.0.5/index.php?page=survey#
+
+turn on intercept request and submit a vote for the survey 
+
+modify the field valeur as you want
+
+sujet=6&valeur=6
+
+
+as the value is unchecked we can input the grade we want.

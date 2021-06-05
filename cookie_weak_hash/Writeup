@@ -1,0 +1,11 @@
+Start burpsuit and intercept request
+
+in every request we see there is a cookie named
+
+Cookie: I_am_admin=68934a3e9455fa72420237eb05902327
+
+the value is md5 hash of false
+
+we just have to input here the md5 hash value of true and we get the flag, or admin right in real life
+
+md5("true") =  b326b5062b2f0e69046810717534cb09
