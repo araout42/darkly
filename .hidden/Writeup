@@ -6,7 +6,7 @@ first we download all the directories recursively
 
 $ wget -rx -e robots=off http://192.168.0.5/.hidden/
 
-then we use grep recursively to exctract the content of readme files
+then we use grep  repeatedly to exctract the content of readme files
 
 $ grep -r -v \< index 192.168.0.5/.hidden > readmes
 
